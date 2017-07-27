@@ -1,0 +1,22 @@
+
+''''
+name= "leo messi"
+print(name.title())
+''''
+output : Leo Messi
+
+when entering user data, generally use name.lower() for a consistent data entry. you don't know what format the user might have entered in the system.
+
+''''
+test= "  tester   "
+print(test.strip() + "s")
+print(test.lstrip() + "s")
+print(test.rstrip() + "s")
+''''
+
+Output:
+testers
+tester   s
+  testers
+
+#adding whitespaces

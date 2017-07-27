@@ -1,0 +1,70 @@
+''''
+philly_office = ['vinod', 'ketki', 'vibhor', 'greg']
+print(philly_office)
+
+for i in range(0, philly_office.__len__()):
+    print(philly_office[i])
+
+print("lead of deloitte philly is " + philly_office[-1].title())
+''''
+
+output:
+['vinod', 'ketki', 'vibhor', 'greg']
+vinod
+ketki
+vibhor
+greg
+lead of deloitte philly is Greg
+----
+
+#initializing an empty list
+dallas = []
+#filling in elements
+dallas.append('vagish')
+dallas.append('anurag')
+dallas.append('kasi')
+print(dallas)
+['vagish', 'anurag', 'kasi']
+
+----
+
+#inserting an element at a particular junction
+''''
+dallas.insert(0,'tester')
+print(dallas)
+
+dallas.insert(dallas.__len__(),philly_office[philly_office.__len__()-2])
+print(dallas)
+dallas.insert(-1,philly_office[0])
+print(dallas)
+''''
+Output:
+['tester', 'vagish', 'anurag', 'kasi']
+['tester', 'vagish', 'anurag', 'kasi', 'greg']
+['tester', 'vagish', 'anurag', 'kasi', 'vinod', 'greg']
+
+# to note: if inserting at the end, it'll be the current index + 1!
+
+#Sorting: interesting-
+
+''''
+print(dallas.sort())
+''''
+  output: 
+    None
+''''
+dallas.sort()
+print(dallas)
+''''
+  output:
+    ['anurag', 'greg', 'kasi', 'tester', 'vagish', 'vinod']
+    
+
+#sort function is permanent. for temporary sorting, use the function sorted()
+print(sorted(philly_office))
+
+#list in reversed order: list.reverse()
+
+#find the length of a list: len(list)
+
+

@@ -7,6 +7,7 @@ output : Leo Messi
 
 when entering user data, generally use name.lower() for a consistent data entry. you don't know what format the user might have entered in the system.
 
+#stripping whitespaces
 ''''
 test= "  tester   "
 print(test.strip() + "s")
@@ -20,3 +21,19 @@ tester   s
   testers
 
 #adding whitespaces
+
+''''
+print("this is a test of new lines \n and \n\t new tabs")
+''''
+Output:
+this is a test of new lines 
+ and 
+	 new tabs
+   
+# str() function
+age = 30
+print("your age is: " + age)
+>TypeError: cannot concatenate 'str' and 'int' objects
+
+print("your age is: " + str(age))
+your age is: 30

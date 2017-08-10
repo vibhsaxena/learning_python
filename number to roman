@@ -1,0 +1,22 @@
+class Roman:
+    def __init__(self, number):
+        self.number=number
+
+    def convert(self,num):
+
+        val=[1000,900,500,400,100,90,50,40,10,9,5,4,1]
+        rom=["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
+        roman_num=''
+        i=0
+        while num>0:
+            for x in range(num // val[i]): #to use floor division and get an int result
+                roman_num += rom[i]
+                num -= val[i]
+            i += 1
+        return roman_num
+
+
+
+num=int(input("enter a number to be converted"))
+roman = Roman(num)
+print("The number in Roman is: " + roman.convert(num))
